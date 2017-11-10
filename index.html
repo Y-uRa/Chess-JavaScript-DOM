@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess-0.2</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <table class="board">
+        <tr>
+            <td class="cell white" onclick="tdClick(event);"><img class="black tour" src="images/black_tour.webp" onclick = "imgClick(event);"></td>
+            <td class="cell black"  onclick="tdClick(event);"><img class="black hourse" src="images/black_hourse.webp" onclick = "imgClick(event);"></td>
+            <td class="cell white"  onclick="tdClick(event);"><img class="black officer" src="images/black_officer.webp" onclick = "imgClick(event);"></td>
+            <td class="cell black"  onclick="tdClick(event);"><img src="images/black_queen.webp" alt="" class="black queen" onclick = "imgClick(event);"></td>
+            <td class="cell white"  onclick="tdClick(event);"><img src="images/black_king.webp" alt="" class="black king" onclick = "imgClick(event);"></td>
+            <td class="cell black"  onclick="tdClick(event);"><img src="images/black_officer.webp" alt="" class="black officer" onclick = "imgClick(event);"></td>
+            <td class="cell white"  onclick="tdClick(event);"><img src="images/black_hourse.webp" alt="" class="black hourse" onclick = "imgClick(event);"></td>
+            <td class="cell black"  onclick="tdClick(event);"><img src="images/black_tour.webp" alt="" class="black tour" onclick = "imgClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell black"  onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell white"  onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell black"  onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell white"  onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/black_pawn.webp" alt="" class="black" onclick = "imgClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"></td>
+        </tr>
+         <tr>    
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_pawn.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+        </tr>
+        <tr>    
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_tour.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_hourse.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black"><img src="images/white_officer.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_queen.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_king.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_officer.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell black" onclick="tdClick(event);"><img src="images/white_hourse.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+            <td class="cell white" onclick="tdClick(event);"><img src="images/white_tour.webp" alt="" class="white" onclick = "imgClick(event);"></td>
+        </tr>
+    </table>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

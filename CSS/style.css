@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.board{
+    border: 5px solid black;
+    border-spacing: 0;
+    margin:auto;
+}
+td.cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+td.white{
+    background-color: #fff;
+}
+td.black{
+    background-color: #555;
+}
