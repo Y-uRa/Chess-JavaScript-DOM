@@ -1,50 +1,61 @@
-var isSec = false; //пременная для отслеживания кто ходит 
-var isStroke = true; //переменная для event что б отследить какой элемент мы нажимаем первым
+var figure, before, after;
+var isSec = false;
+var isStroke = true;
 var isbl = false; // Is black lose
 var iswl = false; // Is white lose
 var isbc = false; // Is black check
 var iswc = false; // Is white check
 
-var figure; // фигура которую предвигаем
-var before; // клетка доски до передвежения
-var after; // клетка доски после передвежения
-
 function imgClick(event){
     event.stopPropagation();
-    
     if(!isSec){
         figure = event.target;
         before = figure.parentNode;
+        $(before).addClass('active');
         isSec = true;
-        
     }
     else{
-        after = event.target.parentNode 
-        isSec = false;  
-        Logic(figure, before, after);
+        if(before && $(before).hasClass('active')){
+            $(before).removeClass('active');
+        }
+        figure2 = event.target;
+        after = event.target.parentNode
+        
+        isSec = false;
+        Align(figure, before, after);
     }
 }
-function tdClick(event){
+function cellClick(event){
+    event.stopPropagation();
+    if(before && $(before).hasClass('active')){
+            $(before).removeClass('active');
+        }
     if(isSec){
         after = event.target;
         isSec = false;
-        Logic(figure, before, after);
+        Align(figure, before, after);
     }
 }
-function Logic(f, b, a){
+
+function Align(f, b, a){
     if(!iswl && !isbl){
         if(isStroke){
             $(a).html(' ');
             $(f).appendTo($(a));
             $(b).html(' ');
+            
             isStroke = !isStroke;
 
         }
+        
         else if(!isStroke){
             $(a).html(' ');
             $(f).appendTo($(a));
             $(b).html(' ');
+            
             isStroke = !isStroke;
         }
     }
 }
+
+AlignStart();
