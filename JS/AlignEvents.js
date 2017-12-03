@@ -1,4 +1,4 @@
-var figure, before, after;
+var figure, figure2 = 0, before, after;
 var isSec = false;
 var isStroke = true;
 var isbl = false; // Is black lose
@@ -19,10 +19,10 @@ function imgClick(event){
             $(before).removeClass('active');
         }
         figure2 = event.target;
-        after = event.target.parentNode
+        after = event.target.parentNode;
         
         isSec = false;
-        Align(figure, before, after);
+        Align();
     }
 }
 function cellClick(event){
@@ -33,27 +33,148 @@ function cellClick(event){
     if(isSec){
         after = event.target;
         isSec = false;
-        Align(figure, before, after);
+        Align();
     }
 }
 
-function Align(f, b, a){
+function Align(){
     if(!iswl && !isbl){
-        if(isStroke){
-            $(a).html(' ');
-            $(f).appendTo($(a));
-            $(b).html(' ');
-            
-            isStroke = !isStroke;
-
+       
+        if(isStroke && $(figure).hasClass('white')){
+            if(figure2 && $(figure2).hasClass('black')){
+                if($(figure).hasClass('tour') && TOUR($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('officer') && OFFICER($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('king') && KING($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('hourse') && HOURSE($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('pawn') && WHITEPAWN_ATACK($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('queen') && QUEEN($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                
+                
+                
+            }
+            else if(!figure2){
+                if($(figure).hasClass('tour') && TOUR($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('officer') && OFFICER($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('king') && KING($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('hourse') && HOURSE($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('pawn') && WHITEPAWN_STROCKE($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                if($(figure).hasClass('queen') && QUEEN($(before).attr('x'), $(before).attr('y'), $(after).attr('x'), $(after).attr('y'))){
+                    console.log('Player1');
+                    $(after).html(' ');
+                    $(figure).appendTo($(after));
+                    $(before).html(' ');
+                    isStroke = !isStroke;
+                    figure2 = 0;
+                }
+                
+            }
+             if($(figure2).hasClass('white')){
+            figure2 = 0;
         }
-        
-        else if(!isStroke){
-            $(a).html(' ');
-            $(f).appendTo($(a));
-            $(b).html(' ');
             
-            isStroke = !isStroke;
+        }
+            
+
+        
+        
+        else if(!isStroke && $(figure).hasClass('black')){
+            if(figure2 && $(figure2).hasClass('white')){
+                console.log('Player2');
+                $(after).html(' ');
+                $(figure).appendTo($(after));
+                $(before).html(' ');
+                isStroke = !isStroke;
+                figure2 = 0;
+            }
+            else if(!figure2){
+                console.log('Player2');
+                $(after).html(' ');
+                $(figure).appendTo($(after));
+                $(before).html(' ');
+                isStroke = !isStroke;
+                
+            }
+             if($(figure2).hasClass('black')){
+            figure2 = 0;
+        }
+            
         }
     }
 }

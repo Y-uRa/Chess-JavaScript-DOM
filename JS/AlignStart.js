@@ -109,88 +109,87 @@ function AlignStart(){
         arr[i].click(function(){cellClick(event);});
     }
     
-    $('<img src="images/black_tour.webp" alt=""> class = "black tour"').appendTo(arr[0]).click(function(){imgClick(event);});
-    $('<img src="images/black_hourse.webp" alt=""> class = "black hourse"').appendTo(arr[1]).click(function(){imgClick(event);});
-    $('<img src="images/black_officer.webp" alt=""> class = "black officer"').appendTo(arr[2]).click(function(){imgClick(event);});
-    $('<img src="images/black_queen.webp" alt=""> class = "black queen"').appendTo(arr[3]).click(function(){imgClick(event);});
-    $('<img src="images/black_king.webp" alt=""> class = "black king"').appendTo(arr[4]).click(function(){imgClick(event);});
-    $('<img src="images/black_officer.webp" alt=""> class = "black officer"').appendTo(arr[5]).click(function(){imgClick(event);});
-    $('<img src="images/black_hourse.webp" alt=""> class = "black hourse"').appendTo(arr[6]).click(function(){imgClick(event);});
-    $('<img src="images/black_tour.webp" alt=""> class = "black tour"').appendTo(arr[7]).click(function(){imgClick(event);});
-    
+    $('<img src="images/black_tour.webp" alt=""> class = "black tour"').appendTo(arr[0]).click(function(){imgClick(event);}).addClass('black').addClass('tour');
+    $('<img src="images/black_hourse.webp" alt=""> class = "black hourse"').appendTo(arr[1]).click(function(){imgClick(event);}).addClass('black').addClass("hourse");
+    $('<img src="images/black_officer.webp" alt=""> class = "black officer"').appendTo(arr[2]).click(function(){imgClick(event);}).addClass('black').addClass('officer');
+    $('<img src="images/black_queen.webp" alt=""> class = "black queen"').appendTo(arr[3]).click(function(){imgClick(event);}).addClass('black').addClass('queen');
+    $('<img src="images/black_king.webp" alt=""> class = "black king"').appendTo(arr[4]).click(function(){imgClick(event);}).addClass('black').addClass('king');
+    $('<img src="images/black_officer.webp" alt=""> class = "black officer"').appendTo(arr[5]).click(function(){imgClick(event);}).addClass('black').addClass('officer');
+    $('<img src="images/black_hourse.webp" alt=""> class = "black hourse"').appendTo(arr[6]).click(function(){imgClick(event);}).addClass('black').addClass('hourse');
+    $('<img src="images/black_tour.webp" alt=""> class = "black tour"').appendTo(arr[7]).click(function(){imgClick(event);}).addClass('black').addClass('tour');
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[8]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[9]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[10]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[11]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[12]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[13]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[14]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     $('<img src="images/black_pawn.webp" alt=""> class = "black pawn"').appendTo(arr[15]).click(function(){
         imgClick(event);
-    });
+    }).addClass('black').addClass('black').addClass("pawn");
     
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[48]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[49]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[50]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[51]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[52]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[53]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[54]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     $('<img src="images/white_pawn.webp" alt=""> class = "white pawn"').appendTo(arr[55]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('pawn');
     
     $('<img src="images/white_tour.webp" alt=""> class = "white tour"').appendTo(arr[56]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('tour');
     $('<img src="images/white_hourse.webp" alt=""> class = "white hourse"').appendTo(arr[57]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('hourse');
     $('<img src="images/white_officer.webp" alt=""> class = "white officer"').appendTo(arr[58]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('officer');
     $('<img src="images/white_queen.webp" alt=""> class = "white queen"').appendTo(arr[59]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('queen');
     $('<img src="images/white_king.webp" alt=""> class = "white king"').appendTo(arr[60]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('king');
     $('<img src="images/white_officer.webp" alt=""> class = "white officer"').appendTo(arr[61]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('officer');
     $('<img src="images/white_hourse.webp" alt=""> class = "white hourse"').appendTo(arr[62]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('hourse');
     $('<img src="images/white_tour.webp" alt=""> class = "white tour"').appendTo(arr[63]).click(function(){
         imgClick(event);
-    });
+    }).addClass('white').addClass('tour');
     
 }
